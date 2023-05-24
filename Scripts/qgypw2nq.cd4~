@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+public class Timer2 : MonoBehaivour
+{
+    public TextMeshProUGUI timeText2;
+    private string time2;
+    
+    void Start()
+    {
+        
+    }
+
+    
+    void Update()
+    {
+        time2 = PlayerPrefs.GetString("time");
+        timeText2.text = time2;
+    }
+
+}

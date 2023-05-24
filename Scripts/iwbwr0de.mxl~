@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class House2Time : MonoBehaviour
+{
+    public TextMeshProUGUI Timetext;
+    private int T;
+
+    void Start()
+    {
+        
+    }
+
+    
+    void Update()
+    {
+        Timetext.text = PlayerPrefs.GetString("time");
+        T = (int)Timetext.text;
+        T += Time.deltaTime * 5;
+        Timetext.text = T.ToString();
+    }
+}

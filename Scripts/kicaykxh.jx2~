@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class Character3_Controller : MonoBehaviour
+{
+    public TextMeshProUGUI Timetext;
+    public Animator anim3;
+    public float Speed3;
+    private float MoveX;
+    public Rigidbody2D rb3;
+    public GameObject character3;
+    public float time;
+
+
+    void Start()
+    {
+        Timetext.text = time.ToString();
+    }
+
+    void Update()
+    {
+        
+    }
+}
